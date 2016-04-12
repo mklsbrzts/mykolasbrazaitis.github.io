@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3lab</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+
+	function check_pass(){
+		if (document.getElementById('pass1').value==document.getElementById('pass2').value){
+	 document.getElementById('pass1').style.backgroundColor = "#5EDB3E";
+	 document.getElementById('pass2').style.backgroundColor = "#5EDB3E";
+	}
+	else {
+	 document.getElementById('pass1').style.backgroundColor = "#E93232";
+	 document.getElementById('pass2').style.backgroundColor = "#E93232";
+	}
+		}
+		
+	function check_date() {
+		document.getElementById('nat').readOnly = false;
+	}	
+
+	function checkform(form) {
+		var inputs = form.getElementsByTagName('input');
+			for (var i = 0; i < inputs.length; i++) {
+			
+				if(inputs[i].value == "" || inputs[i].value == null){
+					alert("Please fill all required fields");
+					return false;
+				}
+			
+		}
+		return true;
+	}
+	
+	function chc (id) {
+		document.getElementById(id).style.backgroundColor = "lightblue";
+		document.getElementById(id).style.transition= "1s";
+	}
+	
+	function rec (id) {
+		document.getElementById(id).style.backgroundColor = "#E1E1E1";
+	}
+	
+	$(document).ready(function(){
+    $("#11").click(function(){
+        $("#p1").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#pass1").click(function(){
+        $("#p2").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#pass2").click(function(){
+        $("#p3").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#44").click(function(){
+        $("#p4").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#55").click(function(){
+        $("#p5").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#nat").click(function(){
+        $("#p7").slideDown();
+    });
+});
+	$(document).ready(function(){
+    $("#88").click(function(){
+        $("#p8").slideDown();
+    });
+});
+
+
+
+
+</script>
+
+<style>
+	
+	fieldset {
+		background-color:#E1E1E1;
+		border-color:#BEBEBE; 
+		box-shadow: 15px 5px 20px #888888;
+		border-radius: 6px; 
+		width: 200px
+	}
+	
+	input {
+		width: 170px;
+		height: 18px;
+		box-shadow: 1px 1px 2px black inset;
+		color: #6E6E6E;
+		transition: 1s;
+		border-width: 0.5px;
+	}
+	
+	input:hover{
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	
+	
+	input:focus {
+		border-radius: 5px;
+		border-color: lightblue;
+	}	
+	
+	textarea {
+		height: 72px;
+		width: 170px;
+		resize: none;
+		box-shadow: 1px 1px 2px black inset;
+		color: #6E6E6E;
+		transition: 1s;
+		border-width: 0.5px;
+	}
+	
+	textarea:hover {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	textarea:focus {
+		border-radius: 5px;
+		border-color: lightblue;
+	}	
+	
+	#button {
+		background:linear-gradient(white, darkgrey);
+		border-radius: 5px;
+		box-shadow: 1px 1px 15px black;
+		text-shadow: 1px -0.5px 2px blue;
+		transition: 1s;
+	}
+	
+	#button:hover {
+		height:30px;
+	}
+	
+	select{
+		box-shadow: 1px 1px 2px black inset;
+		color: #6E6E6E;
+		transition: 1s;
+		border-width: 0.5px;
+	}
+	
+	select:focus {
+		border-radius: 5px;
+		border-color: lightblue;
+	}	
+	
+	select:hover {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8 {
+    padding: 5px;
+    display: none;
+}
+	
+</style>
+
+</head>
+
+<body>
+<form id="myForm" onsubmit="checkform(this);">
+	<fieldset>
+		
+		<legend style="background-color:lightblue">Sign Up</legend>
+		<hr>
+		<p id="1">Nickname</p>
+			<input id="11" type="text" tabindex="4" maxlength="10" onmouseover="chc('1')" onmouseout="rec('1')" ><br>
+				<div id="p1">Vartotojo vardas</div>
+		<p id="2">Password</p>
+			<input type="password" tabindex="5" id="pass1" onblur='check_pass();' onmouseover="chc('2')" onmouseout="rec('2')"><br>
+				<div id="p2">Slaptazodis</div>
+		<p id="3">Repeat password</p>
+			<input type="password" tabindex="6" id="pass2" onblur='check_pass();'  onmouseover="chc('3')" onmouseout="rec('3')"><br>
+				<div id="p3">Pakartoti slaptazodi</div>
+		<p id="4">Name</p>
+			<input id="44" type="text" tabindex="1" onmouseover="chc('4')" onmouseout="rec('4')"><br>
+				<div id="p4">Vardas</div>
+		<p id="5">Sirname</p>
+			<input id="55" type="text" tabindex="2"  onmouseover="chc('5')" onmouseout="rec('5')"><br>
+				<div id="p5">Pavarde</div>
+		<p id="6">Date of birth</p>
+			<select tabindex="3" onchange="check_date();" onmouseover="chc('6')" onmouseout="rec('6')">
+				<option>yyyy</option>
+				<option>1990</option>
+				<option>2000</option>
+				<option>2010</option>
+			</select>
+			<select tabindex="3" onchange="check_date();" onmouseover="chc('6')" onmouseout="rec('6')">
+				<option>M</option>
+				<option>1</option>
+				<option>6</option>
+				<option>12</option>
+			</select>
+			<select tabindex="3" onchange="check_date();" onmouseover="chc('6')" onmouseout="rec('6')">
+				<option>d</option>
+				<option>1</option>
+				<option>15</option>
+				<option>30</option>
+			</select>
+		<p id="7">Nationality</p>		
+			<input id="nat" type="text" value=" Lietuvis" tabindex="7" readonly  onmouseover="chc('7')" onmouseout="rec('7')"><br>
+			<div id="p7">Vartotojo vardas</div>
+		<p id="8">Description</p>
+			<textarea id="88" tabindex="8" onmouseover="chc('8')" onmouseout="rec('8')"></textarea>
+				<div id="p8">Aprasymas</div>
+		<br><br>
+
+			<input id="button" type="submit" value="Send!" tabindex="9"/>
+	
+	</fieldset>
+</form>
+</body>
+</html>
