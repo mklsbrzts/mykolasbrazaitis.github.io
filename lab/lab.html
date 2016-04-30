@@ -1,0 +1,350 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<style>
+		
+		#dd {
+			display:none;
+		}
+		p {
+			color: white;
+			padding: 55px 30px;
+		}
+		
+		.dropbtn {
+			background-color: #666;
+			color: white;
+			padding: 16px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		.dropdown {
+			float:left;
+			position: absolute;
+			display: inline-block;
+			
+			width: 100%;
+			position:fixed;
+			
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			width: 100%;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: #ccc;
+		}
+				
+		
+		@media only screen and (max-width: 2000px) {
+			
+			.antr {
+				float:left;
+				background-color: #ccc;
+				width: 50%;
+				height: 100%;
+				
+				
+			}
+			
+			.trec {
+				background-color: #666;
+				float:left;
+				width: 50%;
+				height: 100%;
+				
+				
+			}
+		
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: grey;
+			}
+			
+			li {
+				float: left;
+			}
+			
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 30px 40px;
+				text-decoration: none;
+			}
+			
+			li a:hover {
+				background-color: lightgrey;
+				text-decoration: none;
+				
+			}
+		}
+		
+		
+		@media only screen and (max-width: 1500px) {
+			
+			.nav {
+				width:20%;
+				height: 100%;
+				
+				float:left;
+				background-color: grey;
+			}
+			
+			.antr {
+				width:40%;
+				float:left;
+			}
+			
+			.trec {
+				width:40%;
+				float:left;
+			}
+			
+			ul {			
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 300px;
+				overflow: initial;
+				background-color: grey;
+			}
+			
+			li {
+				float: initial;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				padding: 30px 40px;
+				text-decoration: none;
+				text-align: initial;
+			}
+
+			
+		}
+		
+		
+		@media only screen and (max-width: 1000px) {
+		
+			.nav {
+					width:20%;
+					
+					
+					float:left;
+				}
+			
+			.antr {
+				float:right;
+				background-color: #ccc;
+				width: 80%;
+				height: 50%;
+				
+			}
+			
+			.trec {
+				background-color: #666;
+				float:right;
+				width: 80%;
+				height: 50%;
+				
+			}
+		
+			ul {			
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 300px;
+				overflow: initial;
+				background-color: grey;
+			}
+			
+			li {
+				float: initial;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				padding: 30px 30px;
+				text-decoration: none;
+				text-align: initial;
+			}
+			
+			#ico{
+				display:none;
+			
+			}
+		}
+		
+		
+		@media only screen and (max-width: 600px) {
+		
+			.nav {
+					width:100%;
+					float:left;
+					height:5.5%;
+				}
+			
+			.antr {
+				
+				background-color: #ccc;
+				width: 100%;
+				height:47%;
+				
+			}
+			
+			.trec {
+				background-color: #666;
+				
+				width: 100%;
+				height: 47%;
+				
+			}
+		
+		
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: grey;
+			}
+			
+			li {
+				float: left;
+			}
+			
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 15px 15px;
+				text-decoration: none;
+			}
+			
+			li a:hover {
+				background-color: lightgrey;
+				text-decoration: none;
+				
+			}
+			
+			#ico{
+				display:none;
+			
+			}
+			
+		}
+		
+		
+		@media only screen and (max-width: 400px) {
+		
+			
+			
+			#dd {
+				display:inline;
+			}
+			
+			.nav {
+				display:none;
+			}
+			
+			.antr {
+				
+				background-color: #ccc;
+				width: 100%;
+				height: 50%;
+				
+			}
+			
+			.trec {
+				background-color: #666;
+				
+				width: 100%;
+				height: 50%;
+				
+			}
+		
+		}
+		
+		</style>
+	
+	
+	</head>
+	
+	<body>
+		
+		
+		
+		
+		
+		
+		
+		<div id="dd" class="dropdown">
+		  <button class="dropbtn">Menu</button>
+		  <div class="dropdown-content">
+			<a href="#">Home</a>
+			<a href="#">News</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		  </div>
+		</div>
+
+		<div class="nav">
+		<ul>
+		  <li><a href="#home"><i id="ico" class="glyphicon glyphicon-home"></i> Home</a></li>
+		  <li><a href="#"><i id="ico" class="glyphicon glyphicon-list-alt"></i> News</a></li>
+		  <li><a href="#"><i id="ico" class="glyphicon glyphicon-bell"></i> Contact</a></li>
+		  <li><a href="#"><i id="ico" class="glyphicon glyphicon-info-sign"></i> About</a></li>
+		</ul>
+		</div>
+		
+		<div class="antr">
+			<p>Antras</p>
+		</div>
+		
+		<div class="trec">
+			<p>Trecias</p>
+		</div>
+	
+	</body>
+
+
+</html>
