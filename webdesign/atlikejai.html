@@ -34,13 +34,21 @@
 		text-align: center;
 		float:right;
 	}
+
+	.nava2 {
+		display: none;
+	}
+
+	
 	
 	li a {
 				display: block;
 				color:black;
-				padding: 40px 30px;
+				width: 130px;
+				height: 100px;
+				padding-top: 38px;
 				text-decoration: none;
-				text-align: initial;
+				text-align: middle;
 				border-left-style: solid;
 				transition: 0.2s;
 				font-weight: bold;
@@ -55,9 +63,9 @@
 			}
 			
 	.top {
-		padding-bottom: 140px;
-		padding-left: 25px;
-		padding-right: 40px;
+		padding-bottom: 160px;
+		padding-left: 32px;
+		padding-right: 36px;
 
 	}
 	
@@ -124,7 +132,7 @@
 	
 	img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 	
 }
 	.img-responsive {
@@ -138,22 +146,93 @@
 	
 	}
 	
-	.select {
-	position: relative;
-		float:left;
+	
+
+
+	@media only screen and (max-width: 1200px) {
+
+	.container {
 		width: 100%;
-		padding-bottom:30px;
+	}
+
+	body {
+		background-image: none;
+	}
+
+	
+}
+
+@media only screen and (max-width: 1015px) {
+
+	.logo {
+		display: none;
+	}
+
+	
+}
+@media only screen and (max-width: 750px) {
+
+	.nava {
+		display: none;
+	}
+
+	.nava2 {
+			display: initial;
+		}
+
+
+	ul {
+		width:initial;
+		position: initial;
+		margin-top: initial;
+	}
+
+	li {
+		display: initial;
+		text-align: initial;
+		float:initial;
+		font-size: 14px;
 	}
 	
-	.select ul {
-		float:left;
-		margin-left: 50px;
+	li a {
+				display: initial;
+				width: initial;
+				height: initial;
+				padding-top: initial;
+				text-align: initial;
+				border-left-style: initial;	
+				border-bottom-style: solid;
+	}	
+
+
+	.nauj {
+		
+		margin-bottom: 30px;
+		}
+
+	.apie {
+		border-top-style: initial;
 	}
-	
-	.select a {
-		padding: 10px 30px;
+	.logo {
+		display: none;
 	}
-	
+
+	.top {
+		padding-bottom:initial;
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+		font-weight: bold;
+
+		padding-left:15px;
+	}
+
+	.grupes {
+		margin-left: initial;
+	}
+
+}
 </style>
 
 
@@ -162,9 +241,35 @@
 
 
 	<div class="container text-center">
+
+
+		<nav class="navbar navbar-default nava2">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Jauna Muzika</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="webpage.html">NAUJIENOS</a></li>
+		        <li><a href="atlikejai.html">ATLIKĖJAI</a></li>
+				<li><a href="pasirodyk.html">PASIRODYK</a></li>
+				<li><a href="renginiai.html">RENGINIAI</a></li>
+		        <li><a class="apie" href="apie.html">APIE</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+
+
 	
 		<div class="top">
-		<ul>
+		<ul class="nava">
 		  
 		  <li><a href="apie.html" style="border-right-style: solid;">APIE</a></li>
 		  <li><a href="renginiai.html">RENGINIAI</a></li>
@@ -173,111 +278,101 @@
 		  <li><a href="webpage.html">NAUJIENOS</a></li>
 		  
 		</ul>
-		<a href="#"><img src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
+		<a href="#"><img class="logo" src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
 		
 		</div>
 		
 		
-		<div class="select">
-		<ul>
-		  
-		  <li><a href="atlikejai1.html" style="border-right-style: solid;">Z - A</a></li>
-		  <li><a href="atlikejai.html">A - Z</a></li>
-		  
-		  
-		</ul>
-		
-		</div>
 		
 		
 		<div class="grupes">
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-centered">
 			<a href="Abii.html">
 				<div class="nauj">
-					<img src="atlikejai/1.png">
-					<div class="example"><p style="padding: 40px; ">Abii</p></div>
+					<img class="img-responsive" src="atlikejai/1.png">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Abii</p></div>
 				</div>
 			</a>  
 		</div>	
 			
 			
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 		<a href="#">
 			<div class="nauj">
-			<img src="atlikejai/2.jpg">
-			<div class="example"><p style="padding: 40px; ">Abudu</p></div>
+			<img class="img-responsive" src="atlikejai/2.jpg">
+			<div class="example col-sm-4"><p style="padding: 40px; ">Abudu</p></div>
 			</div>
 			</a>
 		  
 		</div>	
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 		<a href="#">
 			<div class="nauj">
-			<img src="atlikejai/3.jpg">
-			<div class="example"><p style="padding: 40px; ">Bigsuras</p></div>
+			<img class="img-responsive" src="atlikejai/3.jpg">
+			<div class="example col-sm-4"><p style="padding: 40px; ">Bigsuras</p></div>
 			</div>
 			</a>
 		  
 		</div>	
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/4.jpg">
-					<div class="example"><p style="padding: 40px; ">Jauti</p></div>
+					<img class="img-responsive" src="atlikejai/4.jpg">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Jauti</p></div>
 				</div>
 			</a>  
 		</div>
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/5.png">
-					<div class="example"><p style="padding: 40px; ">Local Blood</p></div>
+					<img class="img-responsive" src="atlikejai/5.png">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Local Blood</p></div>
 				</div>
 			</a>  
 		</div>
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/6.jpg">
-					<div class="example"><p style="padding: 40px; ">Mankur</p></div>
+					<img class="img-responsive" src="atlikejai/6.jpg">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Mankur</p></div>
 				</div>
 			</a>  
 		</div>
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/7.png">
-					<div class="example"><p style="padding: 40px; ">Sirupas</p></div>
+					<img class="img-responsive" src="atlikejai/7.png">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Sirupas</p></div>
 				</div>
 			</a>  
 		</div>
 		
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/8.jpg">
-					<div class="example"><p style="padding: 40px; ">Uprising Tree</p></div>
+					<img class="img-responsive" src="atlikejai/8.jpg">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Uprising Tree</p></div>
 				</div>
 			</a>  
 		</div>
 		
-		<div class="col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<a href="#">
 				<div class="nauj">
-					<img src="atlikejai/9.png">
-					<div class="example"><p style="padding: 40px; ">Whale Sounds</p></div>
+					<img class="img-responsive" src="atlikejai/9.png">
+					<div class="example col-sm-4"><p style="padding: 40px; ">Whale Sounds</p></div>
 				</div>
 			</a>  
 		</div>

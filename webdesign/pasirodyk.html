@@ -23,6 +23,11 @@
 		background-color: white;
 
 	}
+
+	.nava2 {
+		display: none;
+	}
+  
   
 	ul {
 		list-style-type: none;
@@ -39,9 +44,11 @@
 	li a {
 				display: block;
 				color:black;
-				padding: 40px 30px;
+				width: 130px;
+				height: 100px;
+				padding-top: 38px;
 				text-decoration: none;
-				text-align: initial;
+				text-align: middle;
 				border-left-style: solid;
 				transition: 0.2s;
 				font-weight: bold;
@@ -57,8 +64,8 @@
 			
 	.top {
 		padding-bottom: 160px;
-		padding-left: 25px;
-		padding-right: 40px;
+		padding-left: 32px;
+		padding-right: 36px;
 
 	}
 	
@@ -132,6 +139,103 @@
 		padding-right: 40px;
 }
 	
+	form {
+		width: 550px;
+		margin: auto;
+	}
+
+	form label {
+		float:left;
+	}
+
+p {
+	float:left;
+	padding-left: 50px;
+}
+
+	@media only screen and (max-width: 1200px) {
+
+	.logo {
+		display: none;
+	}
+
+	
+}
+@media only screen and (max-width: 750px) {
+
+	.nava {
+		display: none;
+	}
+
+	.nava2 {
+			display: initial;
+		}
+
+
+	ul {
+		width:initial;
+		position: initial;
+		margin-top: initial;
+	}
+
+	li {
+		display: initial;
+		text-align: initial;
+		float:initial;
+		font-size: 14px;
+	}
+	
+	li a {
+				display: initial;
+				width: initial;
+				height: initial;
+				padding-top: initial;
+				text-align: initial;
+				border-left-style: initial;	
+				border-bottom-style: solid;
+
+			}
+
+	.apie {
+		border-top-style: initial;
+	}
+	
+
+	.top {
+		padding-bottom:initial;
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+		font-weight: bold;
+		
+		
+	}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	form {
+		width: 400px;
+	}
+	p{
+		padding-left: initial;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	form {
+		width: 300px;
+	}
+
+
+
+}
+
 
 </style>
 
@@ -140,10 +244,40 @@
 <body>
 
 
+	<div class="container">
+
+
+		<nav class="navbar navbar-default nava2">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Jauna Muzika</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="webpage.html">NAUJIENOS</a></li>
+		        <li><a href="atlikejai.html">ATLIKĖJAI</a></li>
+				<li><a href="pasirodyk.html">PASIRODYK</a></li>
+				<li><a href="renginiai.html">RENGINIAI</a></li>
+		        <li><a class="apie" href="apie.html">APIE</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		</div>
+
+
+
+
 	<div class="container text-center" style="height: 100%; background-color: white;">
 	
 		<div class="top">
-		<ul>
+		<ul class="nava">
 		  
 		  <li><a href="apie.html" style="border-right-style: solid;">APIE</a></li>
 		  <li><a href="renginiai.html">RENGINIAI</a></li>
@@ -152,12 +286,12 @@
 		  <li><a href="webpage.html">NAUJIENOS</a></li>
 		  
 		</ul>
-		<a href="#"><img src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
+		<a href="#"><img class="logo" src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
 		
 		</div>
-		<p style="float:left;padding-left: 40px;">Parodyk save! Atsiųsk mums savo grupės aprašymą ir mes jį patalpinsime savo puslapyje!</p>
+		<p>Parodyk save! Atsiųsk mums savo grupės aprašymą ir mes jį patalpinsime savo puslapyje!</p>
 		<br><br><br>
-		<form class="form-horizontal" role="form" style="padding-bottom: 210px;">
+	<!--<form class="form-horizontal" role="form" style="padding-bottom: 210px;">
 			<div class="form-group">
 			  <label  class="control-label col-sm-2" for="usr">Grupės pavadinimas:</label>
 			  <div class="col-sm-10">
@@ -201,10 +335,38 @@
 			  <button type="submit" class="btn btn-default" style="float:left;">Siųsti</button>
 			</div>
 		  </div>
+		</form>  
+--><form role="form" style="padding-bottom: 130px;">
+		  <div class="form-group">
+		    <label  class="control-label" for="usr">Grupės pavadinimas:</label>
+			  <input type="text" class="form-control" id="usr">
+		  </div>
+		  <div class="form-group">
+			  <label  class="control-label" for="usr">Atstovaujamas stilius:</label>
+			  <input type="text" class="form-control" id="usr">
+			</div>
+		  <div class="form-group">
+			<label class="control-label" for="email">Elektroninis paštas:</label>
+			  <input type="email" class="form-control" id="email">
+			</div>
+		  <div class="form-group">
+			  <label class="control-label" for="comment">Grupės aprašymas:</label>
+			  <textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<div class="form-group">
+			  <label class="control-label" for="comment">Grupės sudėtis:</label>
+			  <textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<div class="form-group">
+			  <label class="control-label" for="comment">Nuorodos:</label>
+			  <textarea class="form-control" rows="3" id="comment"></textarea>
+			</div>
+
+		  <button type="submit" class="btn btn-default" style="float: left; margin-top: 10px">Siųsti</button>
 		</form>
-		
-	</div>
-  
+	
+			</div>
+		  
 
 
  

@@ -13,6 +13,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
+
   <style>
   
 	 body {
@@ -23,6 +24,11 @@
 		background-color: white;
 
 	}
+
+	 .nava2 {
+		display: none;
+	}
+  
   
 	ul {
 		list-style-type: none;
@@ -39,9 +45,11 @@
 	li a {
 				display: block;
 				color:black;
-				padding: 40px 30px;
+				width: 130px;
+				height: 100px;
+				padding-top: 38px;
 				text-decoration: none;
-				text-align: initial;
+				text-align: middle;
 				border-left-style: solid;
 				transition: 0.2s;
 				font-weight: bold;
@@ -57,26 +65,109 @@
 			
 	.top {
 		padding-bottom: 130px;
-		padding-left: 25px;
-		padding-right: 40px;
+		padding-left: 32px;
+		padding-right: 36px;
 
 	}
 	
 	
-	
+	/*
 	img {
-    max-width: 100%;
-    max-height: 100%;
-	
+    
+    width:1100px;
+    height:550px;
+	max-width: 100%;
+    height: auto;
 }
-/*
+
 iframe {
-	width: 500px;
-	height: 360px;
-	margin-top: 60px;
+	 max-width: 100%;
+    max-height: 100%;
+	width:1100px;
+	height:550px;
 
 }
+
+.carousel slide {
+	max-width: 100%;
+    height: auto;
+}
 */
+
+	@media only screen and (max-width: 1200px) {
+
+	.container {
+		width: 100%;
+	}
+
+	body {
+		background-image: none;
+	}
+
+	
+}
+
+@media only screen and (max-width: 1015px) {
+
+	.logo {
+		display: none;
+	}
+
+	
+}
+@media only screen and (max-width: 750px) {
+
+	.nava {
+		display: none;
+	}
+
+	.nava2 {
+			display: initial;
+		}
+
+
+	ul {
+		width:initial;
+		position: initial;
+		margin-top: initial;
+	}
+
+	li {
+		display: initial;
+		text-align: initial;
+		float:initial;
+		font-size: 14px;
+	}
+	
+	li a {
+				display: initial;
+				width: initial;
+				height: initial;
+				padding-top: initial;
+				text-align: initial;
+				border-left-style: initial;	
+				border-bottom-style: solid;	
+			}
+
+	.apie {
+		border-top-style: initial;
+	}
+	.logo {
+		display: none;
+	}
+
+	.top {
+		padding-bottom:initial;
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+		font-weight: bold;
+		
+		padding-left:50px;
+	}
+
+}
 </style>
 
 
@@ -84,10 +175,38 @@ iframe {
 <body>
 
 
+	<div class="container">
+
+
+		<nav class="navbar navbar-default nava2">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Jauna Muzika</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="webpage.html">NAUJIENOS</a></li>
+		        <li><a href="atlikejai.html">ATLIKĖJAI</a></li>
+				<li><a href="pasirodyk.html">PASIRODYK</a></li>
+				<li><a href="renginiai.html">RENGINIAI</a></li>
+		        <li><a class="apie" href="apie.html">APIE</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		</div>
+
+
 	<div class="container text-center">
 	
 		<div class="top">
-		<ul>
+		<ul class="nava">
 		  
 		  <li><a href="apie.html" style="border-right-style: solid;">APIE</a></li>
 		  <li><a href="renginiai.html">RENGINIAI</a></li>
@@ -96,7 +215,7 @@ iframe {
 		  <li><a href="webpage.html">NAUJIENOS</a></li>
 		  
 		</ul>
-		<a href="#"><img src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
+		<a href="#"><img class="logo" src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
 		
 		</div>
 		</div>
@@ -106,7 +225,7 @@ iframe {
     <h1 style="padding-bottom: 10px;">Abii</h1>
     <div class="row">
         <div class="col-md-12">
-            <img style='float:left;width:300px;height:300px; margin-right:40px;' src="atlikejai/1.png" />
+            <img style='float:left;width:300px;height:300px; margin-right:40px;margin-bottom: 10px;' src="atlikejai/1.png" />
             <p>"Abii" - tai naujas projekats kuriį sudaro du beraščiai, buvusios grupės "Fans Of The Sky", nariai. Šiuo metu dar neturime studijinių ar gyvų pasirodymų įrašų. Šis projektas kolkas nėra oficialiai paleistas į pasaulį internetinėje erdvėje. Orientuojamės į medžiagos kaupimą, partnerių ieškojimą ir kokybiškus pasirodymus. Projektas kol kas neturi jokių įsipareigojimų. Muzika vienodai orientuojama į visas amžiaus grupes bei abiejų lyčių atstovus.
 			Projekto nariai yra atviri naujoms idėjom, eksperimentavimui, bendradarbiavimui.</p>
 			<h3>Nariai:</h3>
@@ -145,13 +264,13 @@ iframe {
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <div>
-			<img width="1100px" height="550px" src="http://bit.ly/1Sd3nS4">
+			<img class="img-responsive" src="http://bit.ly/1Sd3nS4">
 		</div>
     </div>
 
     <div class="item">
     	<div>
-			<iframe width="1100px" height="550px" 
+			<iframe width="100%" height="550px" 
 				src="http://www.youtube.com/embed/0KU0CBS-mfQ">
 			</iframe>
 		</div>
@@ -159,7 +278,7 @@ iframe {
 
     <div class="item">
     	<div>
-			<iframe width="1100px" height="550px" 
+			<iframe  width="100%" height="550px" 
 				src="http://www.youtube.com/embed/f0RsIbGP_Iw">
 			</iframe>
 		</div>

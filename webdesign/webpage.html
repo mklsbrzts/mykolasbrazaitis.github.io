@@ -3,6 +3,8 @@
 <head>
   <title>Jauna Muzika</title>
   <meta charset="utf-8">
+
+   <link rel="stylesheet" type="text/css" href="1.css">
   
  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -15,7 +17,7 @@
 	
   <style>
   
-	
+	@media only screen and (max-width: 2000px) {
 	  body {
 		background-image: url("fonas.png");
 	}
@@ -23,7 +25,10 @@
 	.container {
 		background-color: white;
 	}
-	
+
+	.nava2 {
+		display: none;
+	}
 	ul {
 		list-style-type: none;
 		margin: 0;
@@ -34,14 +39,17 @@
 		display: inline;
 		text-align: center;
 		float:right;
+		font-size: 14px;
 	}
 	
 	li a {
 				display: block;
 				color:black;
-				padding: 40px 30px;
+				width: 130px;
+				height: 100px;
+				padding-top: 38px;
 				text-decoration: none;
-				text-align: initial;
+				text-align: middle;
 				border-left-style: solid;
 				transition: 0.2s;
 				font-weight: bold;
@@ -54,12 +62,23 @@
 				text-decoration: none;
 				
 			}
+
+	.apie {
+		border-right-style: solid;
+	}
 			
 	.top {
 		padding-bottom: 160px;
-		padding-left: 25px;
-		padding-right: 40px;
+		padding-left: 32px;
+		padding-right: 36px;
 
+	}
+
+	.logo {
+		float: left; 
+		height: 100px; 
+		width: auto; 
+		margin-top: 10px;
 	}
 	
 	.news {
@@ -90,9 +109,6 @@
 		
 	}
 	
-	
-	
-	  
 	  .example {
 	   position: absolute;
 	   bottom: 0px;
@@ -106,6 +122,10 @@
 	   transition: 0.5s;
 	   font-size: 16px;
 	   font-weight: bold;
+	}
+
+	.title {
+		padding: 40px;
 	}
 	  
 	
@@ -124,6 +144,12 @@
 		margin-bottom: 50px;
 		
 	}
+
+	iframe {
+		width:380px;
+		height:250px;
+
+	}
 	
 	img {
     max-width: 100%;
@@ -131,7 +157,210 @@
 	
 }
 	
+}
 
+@media only screen and (max-width: 1200px) {
+
+	.container {
+		width: 100%;
+	}
+
+	body {
+		background-image: none;
+	}
+
+	.listen {
+	width: 290px;
+	}
+
+	iframe {
+		width:230px;
+		height:150px;
+
+	}
+
+	.more {
+		width: 230px;
+		height: 150px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 1015px) {
+
+	.logo {
+		display: initial;
+		position: absolute;
+		margin-left: -50px;
+		top: 0px;
+
+	}
+
+
+	.listen {
+		display: none;
+	}
+
+	ul {
+		width:190px;
+		position: relative;
+		margin-top: 130px;
+	}
+
+	li a {
+		width: 245px;
+		border-left-style: initial;
+		border-bottom-style: solid;
+	}
+
+	.apie {
+		border-right-style: none;
+		border-top-style: solid;
+	}
+
+	.top {
+		padding-bottom: initial;
+		padding-left: 32px;
+		padding-right: initial;
+		background-color: red;
+		height: 100%;
+	}
+
+	.news {
+	width: 400px;
+	float:right;
+	position: relative;
+	margin-right: 250px;
+	margin-top: -580px;
+	}
+
+
+@media only screen and (max-width: 900px) {
+
+	ul {
+		width:80px;
+		margin-top: 130px;
+	}
+
+	li a {
+		width: 100px;
+	}
+
+	.top {
+		padding-left: 5px;
+	}
+
+	.logo {
+		height:45px;
+		width: auto;
+		margin-left: -20px;
+		margin-top: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 760px) {
+
+	.nava {
+		display: none;
+	}
+
+	.nava2 {
+			display: initial;
+		}
+
+	ul {
+		width:initial;
+		position: initial;
+		margin-top: initial;
+	}
+
+	li {
+		display: initial;
+		text-align: initial;
+		float:initial;
+		font-size: 14px;
+	}
+	
+	li a {
+				display: initial;
+				width: initial;
+				height: initial;
+				padding-top: initial;
+				text-align: initial;
+				border-left-style: initial;		
+			}
+
+	.apie {
+		border-top-style: initial;
+	}
+	.logo {
+		display: none;
+	}
+	
+	
+	.news {
+	
+	position: absolute;
+	margin-right: initial;
+	margin-top: initial;
+	}
+
+	.nauj {
+		margin-left: initial;
+
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+		font-weight: bold;
+		
+		padding-left:initial;
+	}
+	
+}
+	
+
+	@media only screen and (max-width: 615px) {
+
+	.news {
+	width: 400px;
+
+	}
+
+	.nauj {
+		position: relative;
+		width: 350px;
+		height: 196px;
+		margin-left: initial;
+
+
+		
+	}
+	
+	  .example {
+		padding: initial;
+	   width:350px;
+	   height: 60px;
+	   font-size: 13px;
+
+	}
+	  
+	
+	.nauj:hover .example {
+		height: 80px;
+
+	}
+
+	.title {
+		padding: 15px;
+	}
+
+	.navbar-brand {
+		padding-left:initial;
+	}
+}
 </style>
 
 
@@ -140,28 +369,57 @@
 
 
 	<div class="container text-center">
-	
+		
+
+	<nav class="navbar navbar-default nava2">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Jauna Muzika</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="webpage.html">NAUJIENOS</a></li>
+		        <li><a href="atlikejai.html">ATLIKĖJAI</a></li>
+				<li><a href="pasirodyk.html">PASIRODYK</a></li>
+				<li><a href="renginiai.html">RENGINIAI</a></li>
+		        <li><a class="apie" href="apie.html">APIE</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+
+
+
+
+
+
 		<div class="top">
-		<ul>
+		<ul class="nava">
 		  
-		  <li><a href="apie.html" style="border-right-style: solid;">APIE</a></li>
+		  <li><a class="apie" href="apie.html">APIE</a></li>
 		  <li><a href="renginiai.html">RENGINIAI</a></li>
 		  <li><a href="pasirodyk.html">PASIRODYK</a></li>
 		  <li><a href="atlikejai.html">ATLIKĖJAI</a></li>
 		  <li><a href="webpage.html">NAUJIENOS</a></li>
 		  
 		</ul>
-		<a href="#"><img src="logo2.jpg" style="float: left; height: 100px; width: auto; margin-top: 10px;"></a>
+		<a href="#"><img class="logo" src="logo2.jpg"></a>
 		
 		</div>
 		
 		<div class="listen">
 			
-			<p style="font-weight: bold; border-bottom: solid; float:left; font-size: 16px; margin-bottom:30px;">KLAUSYK:</p>
+			<p style="font-weight: bold; border-bottom: solid; float:left; font-size: 15px; margin-bottom:30px;">KLAUSYK:</p>
 			
 			<a href="#">
 			<div class="more">
-			<iframe width="380px" height="250px"
+			<iframe
 			src="http://www.youtube.com/embed/G5U1QciDPoY">
 			</iframe>
 			</div>
@@ -169,7 +427,7 @@
 			
 			<a href="#">
 			<div class="more">
-			<iframe width="380px" height="250px"
+			<iframe
 			src="http://www.youtube.com/embed/M0lxkUfMAYA">
 			</iframe>
 			</div>
@@ -177,7 +435,7 @@
 			
 			<a href="#">
 			<div class="more">
-			<iframe width="380px" height="250px"
+			<iframe
 			src="http://www.youtube.com/embed/YHqEbfKhq00">
 			</iframe>
 			</div>
@@ -185,7 +443,7 @@
 			
 			<a href="#">
 			<div class="more">
-			<iframe width="380px" height="250px"
+			<iframe
 			src="http://www.youtube.com/embed/h9DIUQX7V7A">
 			</iframe>
 			</div>
@@ -199,22 +457,22 @@
 		
 			<a href="#">
 			<div class="nauj">
-			<img src="finalas.jpg">
-			<div class="example"><p style="padding: 40px;">Baigėsi jaunų grupių konkursas GARAŽAS'16</p></div>
+			<img src="finalas.jpg" class="img-responsive">
+			<div class="example"><p class="title">Baigėsi jaunų grupių konkursas GARAŽAS'16</p></div>
 			</div>
 			</a>
 			
 			<a href="#">
 			<div class="nauj">
-			<img src="galapagai.jpg">
-			<div class="example"><p style="padding: 40px;">Festivalis GALAPAGAI meta iššūkį grojančioms grupėms: „Galapagai Music Challenge“!</p></div>
+			<img src="galapagai.jpg" class="img-responsive">
+			<div class="example"><p class="title">Festivalis GALAPAGAI meta iššūkį grojančioms grupėms: „Galapagai Music Challenge“!</p></div>
 			</div>
 			</a>
 		
 			<a href="#">
 			<div class="nauj">
-			<img src="solo.jpg">
-			<div class="example"><p style="padding: 40px;">Solo Ansamblis pristatė savo debiutinį albumą</p></div>
+			<img src="solo.jpg" class="img-responsive">
+			<div class="example"><p class="title">Solo Ansamblis pristatė savo debiutinį albumą</p></div>
 			</div>
 			</a>
 			
